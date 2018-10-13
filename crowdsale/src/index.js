@@ -2,8 +2,7 @@ const TITLE     = "test title";
 const campaigns = [
   {
      name   : "FUND_001",
-     dir    : "fund_001",
-     htmlID : "fund_001"
+     dir    : "fund_001"
   }
 ];
 
