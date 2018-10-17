@@ -86,7 +86,7 @@ $(function() {
                 'Goal Reached: <strong><span id="isGoalReached_'+campaigns[i].dir+'"></span></strong><br/><br/>'+
                 '<h4>Balance</h4>'+
                 'Your Token balance: <strong><span id="tokenBalance_'+campaigns[i].dir+'"></span></strong> tokens<br/><br/>'+
-                '<a href="'+campaigns[i].dir+'/" class="btn btn-primary">Join</a>'+
+                '<a href="'+campaigns[i].dir+'/index.html" class="btn btn-primary">Join</a>'+
                 '</div></div></div>';
     }
 
@@ -95,7 +95,7 @@ $(function() {
 
     for(let i=0 ; i<campaigns.length ; i++) {
       App.contracts[campaigns[i].dir] = {};
-      return App.initContract(  campaigns[i].dir,
+      App.initContract(  campaigns[i].dir,
                                 campaigns[i].dir+'/SampleCrowdsale.json',
                                 campaigns[i].dir+'/RefundVault.json',
                                 campaigns[i].dir+'/MintableToken.json');
